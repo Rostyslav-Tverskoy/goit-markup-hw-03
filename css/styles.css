@@ -107,8 +107,8 @@ ul, ol {
         padding-top: 24px;
         padding-bottom: 24px;
 }
-.nav-list:hover,
-.nav-list:focus {
+.nav-list-item:hover,
+.nav-list-item:focus {
     color:#404bbf;
 }
 .contacts {
