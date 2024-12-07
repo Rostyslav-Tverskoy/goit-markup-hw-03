@@ -139,6 +139,8 @@ ul, ol {
 
 .section-one {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .main-title {
     font-weight: 700;
@@ -148,10 +150,10 @@ ul, ol {
         text-align: center;
         color: #ffffff;
         margin-bottom: 46px;
-        width: 496px;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 188px;
+    
 
 }
 .button-title {
@@ -163,18 +165,18 @@ ul, ol {
         letter-spacing: 0.04em;
         color: #ffffff;
         border-radius: 4px;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
+        display: block;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
 
 }
 
-.btn-container {
-    display: flex;
-        justify-content: center;
-        padding-bottom: 188px;
-}
+
 
 
 .button-title:hover,
@@ -186,6 +188,11 @@ ul, ol {
 
 /* #region Section-2 */
 
+.section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .section-two-title {
     font-weight: 500;
         font-size: 20px;
@@ -193,6 +200,7 @@ ul, ol {
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
+        text-align: center;
 }
 .section-two-paragraph {
     font-weight: 400;
@@ -200,18 +208,16 @@ ul, ol {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        text-align: center;
 }
-
 
 .section-two-list {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .section-two-list-item {
-    width: 264px;
+    width: calc((100% - 72px) / 4)
 }
 
 
@@ -222,6 +228,8 @@ ul, ol {
 
 .section-three {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-three-title {
     font-weight: 700;
@@ -233,30 +241,28 @@ ul, ol {
         text-transform: capitalize;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 120px;
+        
         margin-bottom: 72px;
 }
 .team-list {
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    
+    border-radius: 0px 0px 4px 4px;
     }
 .team-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
 .section-three-title-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+    
 }
 
 /* #endregion */
@@ -266,7 +272,6 @@ ul, ol {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
-    margin-bottom: 120px;
 }
 .section-four-card {
     display: flex;
@@ -279,6 +284,11 @@ ul, ol {
         width: 360px;
         height: 120px;
 }
+.section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 
 
 
@@ -288,23 +298,27 @@ ul, ol {
 
 .footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer .span-logo {
     color: #f4f4fd;
 }
 
-.footer .section-two-paragraph {
+.footer .section-footer-paragraph {
     color:#f4f4fd;
 }
 
-.footer-text {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 264px;
+
+.container .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
-
-
+.section-footer-paragraph {
+    max-width: 264px;
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
 /* #endregion */
